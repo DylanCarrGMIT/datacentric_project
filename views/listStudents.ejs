@@ -1,0 +1,20 @@
+<table>
+
+    <tr>
+        <th>Student ID</th>
+        <th>Name</th>
+        <th>GPA</th>
+        <th>Action</th>
+        
+    </tr>
+    <% students.forEach((student) =>{ %>
+        <tr>
+
+            <td><%= student.sid %></td>
+            <td><%= student.name %></td>
+            <td><%= student.gpa %></td>
+            <td><a href= "/students/delete/<%= student.sid %>">Delete</a></td>
+        </tr>
+    <% }) %>
+</table>
+<a href="/">Home</a>
